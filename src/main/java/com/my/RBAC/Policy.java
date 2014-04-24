@@ -16,16 +16,39 @@ import java.util.List;
  public class Policy
 {
     private String name;
-    private List<Role> roles;
-    private List<Permission> permissions;
+    private List<Role> roles = new ArrayList<Role>();
+    private List<Permission> permissions = new ArrayList<Permission>();
 
-    public Policy(String name) {
-        roles = new ArrayList<Role>();
-        permissions = new ArrayList<Permission>();
-        this.name = name;
+    public Policy()
+    {
+    	
     }
+    
+    public String getName() {
+		return name;
+	}
 
-    public void addRole(Role role)
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(List<Role> roles) {
+		this.roles = roles;
+	}
+
+	public List<Permission> getPermissions() {
+		return permissions;
+	}
+
+	public void setPermissions(List<Permission> permissions) {
+		this.permissions = permissions;
+	}
+
+	public void addRole(Role role)
     {
         roles.add(role);
     }

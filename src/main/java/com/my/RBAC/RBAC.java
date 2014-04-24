@@ -13,9 +13,9 @@ import java.util.List;
  *
  * @author Aditya
  */
-public abstract class RBAC {
+public interface RBAC {
     
-    protected static List<Policy> policies = new ArrayList<Policy>();
+    static List<Policy> policies = new ArrayList<Policy>();
     
     public abstract boolean checkPolicy(User user);
     public abstract void addRoleToUser(User user, Role role);

@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.my.RBAC.Permission;
+import com.my.RBAC.Policy;
+import com.my.RBAC.RBAC;
+import com.my.RBAC.Role;
+import com.my.RBAC.User;
 import com.tazdingo.core.IService;
 import com.tazdingo.core.Response;
 
@@ -53,10 +58,5 @@ public class HomeController {
 		logger.info("Welcome Platform! The client locale is {}.", locale);
 		response=service.takeRequest(request, response);		
 	}
-	
-	
-	
-	
-	
-	
+
 }
