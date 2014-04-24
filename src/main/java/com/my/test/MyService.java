@@ -34,16 +34,20 @@ public class MyService extends ServiceServer {
 
 	@Override
 	protected Response excuteRequest(String usersessionid) {
-
+		
 		ServiceWorkRequest serviceWorkRequest = (ServiceWorkRequest) workqueue
 				.pullWorkRequest(usersessionid);
 		Request userRequest =  serviceWorkRequest.getRequest();
 		Map<String, String> data =  userRequest.getData();
 		String username = data.get(ConstantUtil.USERNAME);
 		String deviceId = data.get(ConstantUtil.DEVICEID);
+		Response response = null;
+		if(username != null && deviceId != null){
+			response = new Response();
+			response.setData(data);
+		}
 		
-		Response response = new Response();
-		response.setData(data);
+		
 		
 		return response;
 	}
