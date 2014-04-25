@@ -1,0 +1,13 @@
+<userlist>
+   <user>
+      <username>ABC</username>
+      <deviceid>3232</deviceid>
+      <roles class="java.util.ArrayList">
+         <role>ADmin</role>
+      </roles>
+      <permissions class="java.util.ArrayList">
+         <permission>Read</permission>
+         <permission>Write</permission>
+      </permissions>
+   </user>
+</userlist>

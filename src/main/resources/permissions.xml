@@ -1,0 +1,6 @@
+<permissions>
+   <permissions class="java.util.ArrayList">
+      <permission>Read</permission>
+      <permission>Write</permission>
+   </permissions>
+</permissions>

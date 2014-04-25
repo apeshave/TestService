@@ -1,0 +1,12 @@
+<policies>
+   <policy>
+      <name>P1</name>
+      <roles class="java.util.ArrayList">
+         <role>ad</role>
+      </roles>
+      <permissions class="java.util.ArrayList">
+         <permission>qqqqq</permission>
+         <permission>wwwww</permission>
+      </permissions>
+   </policy>
+</policies>
