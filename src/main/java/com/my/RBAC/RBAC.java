@@ -5,20 +5,24 @@
  */
 
 package com.my.RBAC;
- 
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * 
  * @author Aditya
  */
 public interface RBAC {
-    
-    static List<Policy> policies = new ArrayList<Policy>();
-    
-    public abstract boolean checkPolicy(User user);
-    public abstract void addRoleToUser(User user, Role role);
-    public abstract void addPermission(User user, Permission permission);
-    public abstract void addPolicy(Policy policy);
+
+	static List<Policy> policies = new ArrayList<Policy>();
+
+	/**
+	 * This method takes the user as input and checks the roles and permissions
+	 * associated with it and matches it with the available policies.
+	 * 
+	 * @param user - the user object to be checked
+	 * @return whether he is authorized or not
+	 */
+	public abstract boolean checkPolicy(User user);
 }
