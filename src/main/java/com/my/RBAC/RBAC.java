@@ -16,6 +16,9 @@ import java.util.List;
 public interface RBAC {
 
 	static List<Policy> policies = new ArrayList<Policy>();
+	static List<User> users = new ArrayList<User>();
+	static List<Permission> permissions = new ArrayList<Permission>();
+	static List<Role> roles = new ArrayList<Role>();
 
 	/**
 	 * This method takes the user as input and checks the roles and permissions

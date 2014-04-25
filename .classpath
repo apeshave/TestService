@@ -25,6 +25,11 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Security Platform"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Aditya/Dropbox/SEM4/Current Eclipse Workspace/workspace/TestService/lib/platform-core-1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Aditya/Dropbox/SEM4/Current Eclipse Workspace/workspace/TestService/lib/platform-device-1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Aditya/Dropbox/SEM4/Current Eclipse Workspace/workspace/TestService/lib/platform-keyserver-1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Aditya/Dropbox/SEM4/Current Eclipse Workspace/workspace/TestService/lib/platform-platform-1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Aditya/Dropbox/SEM4/Current Eclipse Workspace/workspace/TestService/lib/platform-service-core-1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Aditya/Dropbox/SEM4/Current Eclipse Workspace/workspace/TestService/lib/platform-serviceserver-1.0-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

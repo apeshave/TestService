@@ -14,6 +14,12 @@ public class Permission {
    
 	private String permission;
 
+	public Permission(String permissison)
+	{
+		this.permission = permissison;
+	}
+	
+	
 	public String getPermission() {
 		return permission;
 	}

@@ -3,6 +3,7 @@ package com.my.test;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -48,7 +49,7 @@ public class HomeController {
 	public @ResponseBody void takeRequest(Locale locale,HttpServletRequest request,HttpServletResponse response) {
 		
 		logger.info("Welcome Platform! The client locale is {}.", locale);
-		response=service.takeRequest(request, response);		
+		response=service.takeRequest(request, response);
 	}
 
 }
